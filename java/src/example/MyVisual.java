@@ -23,14 +23,15 @@ public class MyVisual extends Visual
         startMinim();
                 
         // Call loadAudio to load an audio file to process 
-        //loadAudio("heroplanet.mp3");   
+        loadAudio("heroplanet.mp3");   
 
         
         // Call this instead to read audio from the microphone
-        startListening(); 
+        //startListening(); 
         
         wf = new WaveForm(this);
         abv = new AudioBandsVisual(this);
+        surface.setResizable(true);
     }
 
     public void keyPressed()
@@ -44,6 +45,7 @@ public class MyVisual extends Visual
 
     public void draw()
     {
+        surface.setResizable(true);
         background(0);
         try
         {
@@ -58,8 +60,10 @@ public class MyVisual extends Visual
         calculateFrequencyBands(); 
 
         // Call this is you want to get the average amplitude
-        calculateAverageAmplitude();        
+        calculateAverageAmplitude();   
+        surface.setResizable(true);     
         wf.render();
         abv.render();
+    
     }
 }

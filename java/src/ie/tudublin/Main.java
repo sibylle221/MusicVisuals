@@ -1,5 +1,7 @@
 package ie.tudublin;
 
+
+//import C19305471.SophieVisual;
 import example.CubeVisual;
 import example.MyVisual;
 import example.RotatingAudioBands;
@@ -16,6 +18,8 @@ public class Main
 	public static void main(String[] args)
 	{
 		Main main = new Main();
-		main.startUI();			
+		main.startUI();	
+		//CubeVisual example = new example();
+		//example.CubeVisual();	
 	}
 }

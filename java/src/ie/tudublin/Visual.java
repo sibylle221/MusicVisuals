@@ -81,6 +81,7 @@ public abstract class Visual extends PApplet
 
 	public void startListening()
 	{
+		ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
 		ai = minim.getLineIn(Minim.MONO, frameSize, 44100, 16);
 		ab = ai.left;
 	}

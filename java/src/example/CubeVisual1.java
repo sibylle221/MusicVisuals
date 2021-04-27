@@ -31,6 +31,7 @@ public class CubeVisual1 extends Visual
 
     public void draw()
     {
+        surface.setResizable(true);
         background(0);
         calculateAverageAmplitude();
         stroke(map(getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
