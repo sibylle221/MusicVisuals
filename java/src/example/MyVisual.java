@@ -44,6 +44,7 @@ public class MyVisual extends Visual
 
     public void draw()
     {
+        surface.setResizable(true);
         background(0);
         try
         {
