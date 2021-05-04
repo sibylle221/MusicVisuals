@@ -46,6 +46,7 @@ public class RotatingAudioBands extends Visual {
 
     public void draw()
     {
+        surface.setResizable(true);
         calculateAverageAmplitude();
         try
         {

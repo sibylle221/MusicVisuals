@@ -1,13 +1,14 @@
 package example;
 
+//import C19305471.SophieVisual;
 import processing.core.*;
 
 // This is an example of a visual that uses the audio bands
 public class AudioBandsVisual
 {
-    MyVisual mv;
+    SophieVisual mv;
 
-    public AudioBandsVisual(MyVisual mv)
+    public AudioBandsVisual(SophieVisual mv)
     {
         this.mv = mv; 
     }

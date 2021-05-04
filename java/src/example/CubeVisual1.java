@@ -39,7 +39,6 @@ public class CubeVisual1 extends Visual
         noFill();
         lights();
         pushMatrix();
-        //
         camera(0, 0, 0, 0, 0, -1, 0, 1, 0);
         translate(0, 0, -200);
         rotateX(angle);
