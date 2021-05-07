@@ -1,15 +1,7 @@
 package ie.tudublin;
 
-
-//import C19305471.*;
-import example.SophieVisual;
-import example.CubeVisual;
-//import example.MyVisual;
-import example.RotatingAudioBands;
-import example.CubeVisual1;
-import example.VisualTestWork;
-import example.*;
-
+import C19305471.SophieVisual2;
+import example.VisualTest;
 
 public class Main
 {	
@@ -17,7 +9,7 @@ public class Main
 	public void startUI()
 	{
 		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new VisualTestWork2());		
+        processing.core.PApplet.runSketch( a, new SophieVisual2());		
 	}
 
 	public static void main(String[] args)
