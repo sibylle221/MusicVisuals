@@ -179,7 +179,7 @@ And weirdly enough I'm proud I started again when I realised I wouldn't be able 
 
 # Youtube Video
 
-[![YouTube](https://youtu.be/6ZPJ8wNZJHI)](images/cover.png)
+[![YouTube](https://youtu.be/6ZPJ8wNZJHI.jpg)](https://youtu.be/6ZPJ8wNZJHI)
 
 Enjoy!
 
