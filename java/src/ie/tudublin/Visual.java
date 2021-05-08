@@ -14,9 +14,9 @@ public abstract class Visual extends PApplet
 
 	private Minim minim;
 	private AudioInput ai;
-	private AudioPlayer ap;
+	public AudioPlayer ap;
 	private AudioBuffer ab;
-	private FFT fft;
+	public FFT fft;
 
 	private float amplitude  = 0;
 	private float smothedAmplitude = 0;
@@ -64,7 +64,7 @@ public abstract class Visual extends PApplet
 	}
 
 
-	protected void calculateFrequencyBands() {
+	public void calculateFrequencyBands() {
 		for (int i = 0; i < bands.length; i++) {
 			int start = (int) pow(2, i) - 1;
 			int w = (int) pow(2, i);
@@ -81,6 +81,7 @@ public abstract class Visual extends PApplet
 
 	public void startListening()
 	{
+		ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
 		ai = minim.getLineIn(Minim.MONO, frameSize, 44100, 16);
 		ab = ai.left;
 	}
@@ -143,4 +144,6 @@ public abstract class Visual extends PApplet
 	public FFT getFFT() {
 		return fft;
 	}
+
+	
 }
