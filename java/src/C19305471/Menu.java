@@ -5,8 +5,6 @@ public class Menu extends SophieVisual2{
     SophieVisual2 sv2;
     float x;
 
-
-
     public Menu (SophieVisual2 sv2)
     {
         this.sv2 = sv2;

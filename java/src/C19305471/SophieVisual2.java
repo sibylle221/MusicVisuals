@@ -78,9 +78,7 @@ public class SophieVisual2 extends Visual{
         calculateAverageAmplitude();
         getAudioBuffer();
         getSmoothedBands();
-        
-        
-
+               
         //toggles menu
         if(toggle)
         {
